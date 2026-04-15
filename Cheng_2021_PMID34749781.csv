@@ -1,0 +1,11 @@
+paper,expset_accession,condition,dataset_label,biosource,biosample_type,biosample_category,tissue,treatments_summary,modifications_summary,assay_target,imaging_rounds,num_bio_reps,bio_rep_idx,trace_core_file_accession,trace_core_url,all_fofct_types
+Cheng_2021_PMID34749781,4DNESBR4BVOZ,"IMR90 cells, untreated, open chromatin region",Chromatin tracing of chrX,IMR-90,primary cells,primary cell line,IMR-90,None,None,multiplexed FISH,5,1,1,,,
+Cheng_2021_PMID34749781,4DNESSJUM54F,"IMR90 cells, untreated, closed chromatin region",Chromatin tracing of chrX,IMR-90,primary cells,primary cell line,IMR-90,None,None,multiplexed FISH,5,1,1,,,
+Cheng_2021_PMID34749781,4DNES5XKLWKW,"IMR90 cells, DNA methylation inhibitor",Chromatin tracing of chrX,IMR-90,primary cells,primary cell line,IMR-90,"5-Aza-2ʹ-Deoxycytidine treatment (10.0 μM, 24.0h)",None,multiplexed FISH,5,1,1,,,
+Cheng_2021_PMID34749781,4DNES73TYNAK,"IMR90 cells, EZH2 methyltransferase inhibitor",Chromatin tracing of chrX,IMR-90,primary cells,primary cell line,IMR-90,"GSK126 treatment (1.0 μM, 48.0h)",None,multiplexed FISH,5,1,1,,,
+Cheng_2021_PMID34749781,4DNES4Y519FW,"IMR90 cells, hyper histone methylation",Chromatin tracing of chrX,IMR-90,primary cells,primary cell line,IMR-90,"DMOG treatment (2.5 mM, 12.0h)",None,multiplexed FISH,5,1,1,,,
+Cheng_2021_PMID34749781,4DNES82IH3OG,"IMR90 cells, transcription inhibitor",Chromatin tracing of chrX,IMR-90,primary cells,primary cell line,IMR-90,"Alpha-amanitin treatment (50.0 μg/mL, 8.0h)",None,multiplexed FISH,5,1,1,,,
+Cheng_2021_PMID34749781,4DNESUDN4NP6,"IMR90 cells, HDAC inhibitors",Chromatin tracing of chrX,IMR-90,primary cells,primary cell line,IMR-90,"Trichostatin A treatment (100.0 ng/mL, 24.0h) and Sodium butyrate treatment (20.0 nM, 24.0h)",None,multiplexed FISH,5,1,1,,,
+Cheng_2021_PMID34749781,4DNESDQV4VNJ,"IMR90 cells, untreated",Chromatin tracing of chrX,IMR-90,primary cells,primary cell line,IMR-90,None,None,multiplexed FISH,5,2,1,,,
+Cheng_2021_PMID34749781,4DNESDQV4VNJ,"IMR90 cells, untreated",Chromatin tracing of chrX,IMR-90,primary cells,primary cell line,IMR-90,None,None,multiplexed FISH,5,2,2,,,
+Cheng_2021_PMID34749781,4DNESTJZUP4P,"RPE-1 cells, untreated",Chromatin tracing of chrX,RPE-hTERT,immortalized cells,immortalized cell line,RPE-hTERT,None,None,multiplexed FISH,5,1,1,,,

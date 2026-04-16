@@ -71,18 +71,16 @@ Metadata and download manifests for **human** multiplexed FISH datasets from the
 
 ### 7. Fujimori_2023_doi_10.1101_2023.10.03.560616
 **Fujimori T et al. (2023) — doi:10.1101/2023.10.03.560616 (preprint)**
-- **Cell type:** H9 human embryonic stem cells (hESC) and differentiated cells (cranial neural crest cells, CNCCs)
-- **Chromatin target:** 80 spaced regions at SOX9 locus; chrX TAD tracing (20+20 TADs)
-- **Experiment type:** Chromatin tracing of SOX9 locus in CNCCs (with CTCF deletions); chrX tracing in H9 under multiple differentiation conditions
-- **Conditions (18 sets):** CNCCs wt (steps #1–80, #7–58) and CTCF deletions (E1.35, promoter); H9 hESC undifferentiated; H9 chrX under conditions (5iLA, 5iLAF, 4iLAF+tMEKi, mTeSR1, combined XIST+/−, ATRX+/−); HES-3 chrX conditions
-
+- **Cell type:** K562 (human erythroleukemia); 293T (HEK293T with TetR-KRAB/DNMT3B/HDAC4 doxycycline-inducible silencing systems)
+- **Chromatin target:** MYC locus on chr8 (48 × 10-kb segments, ~480 kb); AAVS1 locus on chr19 (custom genome assembly with pJT039-chr19 insert, 19 readout steps at 5-kb resolution)
+- **Experiment type:** Multiplexed FISH of MYC locus in K562 (widefield vs custom microscope); Multiplexed FISH of AAVS1 chromatin with inducible TetR-KRAB/DNMT3B/HDAC4 silencing (wildtype, EEW25AAA mutant, Y46A mutant) and doxycycline treatments
+- **Conditions (18 sets):** K562 MYC widefield/customscope; 293T rTetR-KRAB (wt/Y46A/EEW25AAA) ± dox 1d/5d, washout; rTetR-DNMT3B ± dox 5d+22d washout; rTetR-HDAC4 ± dox 1d/5d
 ### 8. Cheng_2023_PMID36778402
 **Cheng Y et al. (2023) — PMID:36778402**
-- **Cell type:** H1-hESC, H7-hESC, H9, HES-3 (human stem cells and derivatives)
-- **Chromatin target:** chrX TADs (20+20 TADs); XIST RNA FISH; ATRX protein staining
-- **Experiment type:** Chromatin tracing of chrX through X-chromosome inactivation during stem cell differentiation
-- **Conditions (15 sets):** H7 day2/4/6 (XIST+/−), H9 5iLA/5iLAF/mTeSR1/4iLAF+tMEKi/combined (XIST+/−), HES-3 5iLA/5iLAF/mTeSR1/4iLAF+tMEKi, H9 5iLA ATRX+/−
-
+- **Cell type:** H1-hESC differentiated to neural progenitor cells, RPE-hTERT, A549 (human cancer/immortalized cell lines)
+- **Chromatin target:** 27 TADs on Chr22; 34 TADs on Chr21; Geminin (cell cycle marker)
+- **Experiment type:** Perturb-tracing: high-content screening of 3D genome regulators via multiplexed FISH with CRISPR perturbations (CHD7 knockdown/overexpression, ZNF114, PCBP1, 137-gene screen)
+- **Conditions (15 sets):** H1-hESC NPC shCHD7/control on Chr22; RPE-hTERT siCHD7/control on Chr21 and Chr22; A549 siCHD7/shCHD7/sgZNF114/sgPCBP1/controls on Chr22; CHD7 overexpression; 137-gene knockdown screen
 ### 9. Chen_2023_PMID36996812
 **Chen LF et al. (2023) — PMID:36996812**
 - **Cell type:** H9 differentiated to cranial neural crest cells (CNCCs); H9 ESCs
@@ -92,11 +90,10 @@ Metadata and download manifests for **human** multiplexed FISH datasets from the
 
 ### 10. Patterson_2023_PMID37540754
 **Patterson B et al. (2023) — PMID:37540754**
-- **Cell type:** 293T (HEK293T with TetR-KRAB doxycycline-inducible silencing system)
-- **Chromatin target:** AAVS1 locus with pJT039-chr19 insert; custom genome assembly
-- **Experiment type:** Multiplexed FISH of AAVS1 chromatin with inducible TetR-KRAB silencing (wildtype, EEW25AAA mutant, Y46A mutant)
-- **Conditions (21 sets):** TetR-KRAB wildtype/mutants with dox 1d/5d treatment, 5d+22d washout (reporter ON/OFF), and controls
-
+- **Cell type:** IMR-90 (human fibroblasts); HES-3, H9, H7-hESC (human embryonic stem cells)
+- **Chromatin target:** chrX TADs (20+20 TADs, ~100 kb per TAD); XIST RNA FISH; ATRX protein staining
+- **Experiment type:** Chromatin tracing of chrX folding conformations in naive and primed human pluripotent stem cells during X-chromosome inactivation
+- **Conditions (21 sets):** IMR-90 mTeSR1/5iLAF/5iLA; HES-3 mTeSR1/5iLAF/5iLA/4iLAF+tMEKi; H9 mTeSR1/5iLAF/5iLA combined (XIST+/−), ATRX+/−; H7 day2/4/6 (XIST+/−)
 ---
 
 ## Files
@@ -125,6 +122,11 @@ Metadata and download manifests for **human** multiplexed FISH datasets from the
 | `trace_core_file_accession` | 4DN file accession for trace core CSV |
 | `trace_core_url` | Direct S3 download URL for FOF-CT trace core CSV |
 | `all_fofct_types` | All FOF-CT file types available (pipe-separated) |
+
+| readout_resolution | Step/readout resolution (e.g. 30 kb, TAD-level) |
+| region_size | Genomic region size/range (e.g. chr21:28-30 Mb) |
+| cell_type_detail | Detailed cell type/biosource from 4DN portal |
+| treatment_detail | Specific treatment details from 4DN portal |
 
 ## Download Trace Files
 

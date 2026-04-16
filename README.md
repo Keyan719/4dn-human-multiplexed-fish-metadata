@@ -10,91 +10,150 @@ Metadata and download manifests for **human** multiplexed FISH datasets from the
 
 ## Papers Covered
 
-| # | Label | Publication | Sets | Trace Files |
-|---|-------|-------------|------|-------------|
-| 1 | Bintu_2018_PMID30361340 | Bintu B et al. (2018) PMID:30361340 | 10 | 10 |
-| 2 | Nir_2018_PMID30586358 | Nir G et al. (2018) PMID:30586358 | 1 | 0 |
-| 3 | Su_2020_PMID32822575 | Su JH et al. (2020) PMID:32822575 | 3 | 3 |
-| 4 | Wang_2016_PMID27445307 | Wang S et al. (2016) PMID:27445307 | 5 | 0 |
-| 5 | Cheng_2021_PMID34749781 | Cheng Y et al. (2021) PMID:34749781 | 9 | 0 |
-| 6 | Llimos_2022_PMID35440565 | Llimos G et al. (2022) PMID:35440565 | 2 | 4 |
-| 7 | Fujimori_2023_doi_10.1101_2023.10.03.560616 | Fujimori T et al. (2023) doi:10.1101/2023.10.03.560616 | 18 | 59 |
-| 8 | Cheng_2023_PMID36778402 | Cheng Y et al. (2023) PMID:36778402 | 15 | 15 |
-| 9 | Chen_2023_PMID36996812 | Chen LF et al. (2023) PMID:36996812 | 5 | 8 |
-| 10 | Patterson_2023_PMID37540754 | Patterson B et al. (2023) PMID:37540754 | 21 | 21 |
+| # | Label | Publication | Sets | Trace Files | Scope |
+|---|-------|-------------|------|-------------|-------|
+| 1 | Su_2020_PMID32822575 | Su JH et al. (2020) PMID:32822575 | 3 | 3 | Genome-wide |
+| 2 | Wang_2016_PMID27445307 | Wang S et al. (2016) PMID:27445307 | 5 | 0 | Chromosome-scale |
+| 3 | Nir_2018_PMID30586358 | Nir G et al. (2018) PMID:30586358 | 1 | 0 | Chromosome-scale |
+| 4 | Patterson_2023_PMID37540754 | Patterson B et al. (2023) PMID:37540754 | 21 | 21 | Chromosome-scale |
+| 5 | Cheng_2023_PMID36778402 | Cheng Y et al. (2023) PMID:36778402 | 15 | 15 | Chromosome-scale |
+| 6 | Bintu_2018_PMID30361340 | Bintu B et al. (2018) PMID:30361340 | 10 | 10 | Locus-focused |
+| 7 | Cheng_2021_PMID34749781 | Cheng Y et al. (2021) PMID:34749781 | 9 | 0 | Locus-focused |
+| 8 | Llimos_2022_PMID35440565 | Llimos G et al. (2022) PMID:35440565 | 2 | 4 | Locus-focused |
+| 9 | Fujimori_2023_doi_10.1101_2023.10.03.560616 | Fujimori T et al. (2023) doi:10.1101/2023.10.03.560616 | 18 | 59 | Locus-focused |
+| 10 | Chen_2023_PMID36996812 | Chen LF et al. (2023) PMID:36996812 | 5 | 8 | Locus-focused |
 
 ---
 
 ## Per-Paper Descriptions
 
-### 1. Bintu_2018_PMID30361340
-**Bintu B et al. (2018) — PMID:30361340**
-- **Cell type:** HCT116, IMR-90, A549, K562 (human immortalized/primary cells)
-- **Chromatin target:** 2-Mb regions on chr21 (chr21:28–30 Mb and chr21:34–37 Mb); consecutive 30-kb locus panels (65 or 83 loci)
-- **Experiment type:** Chromatin tracing with cohesin depletion (RAD21-AID); cell cycle tracking (Geminin)
-- **Conditions (10 sets):** IMR90 chr21:28–30 Mb, IMR90 chr21:18–20 Mb (no TADs), IMR90 chr21:34–37 Mb across cell cycle, A549 chr21:28–30 Mb, K562 chr21:28–30 Mb, HCT116 chr21:28–30 Mb ± cohesin depletion, HCT116 chr21:34–37 Mb ± cohesin depletion + post-division
+### Genome-Wide and Chromosome-Scale Studies
 
-### 2. Nir_2018_PMID30586358
-**Nir G et al. (2018) — PMID:30586358**
-- **Cell type:** GM23248 (human lymphoblastoid cell line)
-- **Chromatin target:** 8-Mb walks on chr19 (22 genomic regions)
-- **Experiment type:** Super-resolution imaging of chromosome walks
-- **Conditions (1 set):** Wild-type GM23248 cells — no FOF-CT trace files available
+These studies scan large portions of individual chromosomes or the genome, tracing TAD-level or megabase-scale chromatin organization across many domains simultaneously.
 
-### 3. Su_2020_PMID32822575
+#### 1. Su_2020_PMID32822575
 **Su JH et al. (2020) — PMID:32822575**
-- **Cell type:** IMR-90 (human lung fibroblasts)
-- **Chromatin target:** Genome-scale — 1,041 genomic loci (DNA-MERFISH); combined DNA+RNA-MERFISH of 1,137 genes
-- **Experiment type:** DNA-MERFISH (genome-scale imaging); alpha-amanitin transcription inhibition
+*Genome-Scale Imaging of the 3D Organization and Transcriptional Activity of Chromatin* (Cell)
+
+- **Cell type:** IMR-90 (human fetal lung fibroblasts)
+- **Chromatin target:** Genome-scale — 1,041 genomic loci at ~3 Mb spacing (DNA-MERFISH); also combined DNA+RNA-MERFISH of 1,137 genes with landmark nuclear structures
+- **Resolution:** ~30 kb per locus; genome-wide spacing ~3 Mb
+- **Method:** DNA-MERFISH (multiplexed error-robust FISH) for simultaneous imaging of >1,000 genomic loci; combined with nascent RNA-MERFISH for transcriptional readout
+- **Biological question:** How are chromatin domains, compartments, and trans-chromosomal interactions organized at genome scale, and how do they relate to transcription in single cells?
+- **Key treatments:** Untreated control; alpha-amanitin transcription inhibition (100 µg/mL)
 - **Conditions (3 sets):** DNA-MERFISH of 1,041 loci (untreated), DNA-MERFISH (alpha-amanitin treated), DNA+RNA-MERFISH of 1,137 genes
 
-### 4. Wang_2016_PMID27445307
+#### 2. Wang_2016_PMID27445307
 **Wang S et al. (2016) — PMID:27445307**
-- **Cell type:** IMR-90 (human lung fibroblasts)
-- **Chromatin target:** Consecutive TAD-scale loci on chrX, chr21, chr22, chr20 (14–40 TADs per chromosome)
-- **Experiment type:** Chromatin tracing of single chromosomes (sequential FISH)
-- **Conditions (5 sets):** chrX (Xi), chrX (Xa), chr22, chr21, chr20 — no FOF-CT trace files available (older pre-FOF-CT format)
+*Spatial organization of chromatin domains and compartments in single chromosomes* (Science)
 
-### 5. Cheng_2021_PMID34749781
-**Cheng Y et al. (2021) — PMID:34749781**
-- **Cell type:** IMR-90, RPE-hTERT (human cells)
-- **Chromatin target:** 28 consecutive 30-kb loci on chrX with XIST RNA FISH; mH2A.1 protein staining
-- **Experiment type:** Chromatin tracing of chrX with epigenetic/RNA markers and pharmacological treatments
-- **Conditions (9 sets):** IMR90 untreated (open/closed chromatin), DNA methylation inhibitor, EZH2 inhibitor, hyper H3K27me3, transcription inhibitor, HDAC inhibitor; RPE-1 untreated — no FOF-CT trace files available
+- **Cell type:** IMR-90 (human fetal lung fibroblasts)
+- **Chromatin target:** Consecutive TADs across entire chromosomes — chrX (14 TADs on Xi, 16 TADs on Xa), chr21 (20 TADs), chr22 (26 TADs), chr20 (40 TADs)
+- **Resolution:** TAD-level (~0.5–2 Mb per TAD)
+- **Method:** Sequential FISH with TAD-specific probes; the earliest chromatin tracing study in this collection
+- **Biological question:** How are TADs and A/B compartments spatially organized along individual chromosomes? How does folding differ between active X (Xa) and inactive X (Xi) chromosomes?
+- **Conditions (5 sets):** chrX (Xi), chrX (Xa), chr22, chr21, chr20
+- **Note:** No FOF-CT trace files available (older pre-FOF-CT format)
 
-### 6. Llimos_2022_PMID35440565
-**Llimos G et al. (2022) — PMID:35440565**
-- **Cell type:** B-lymphocyte primary cells (LCLs with homozygous reference or mutant indel on chr17)
-- **Chromatin target:** 200-kb region on chr17 (AXIN2 variable chromatin module); 8-kb resolution
-- **Experiment type:** Multiplexed FISH studying non-coding variant effects on chromatin module formation
-- **Conditions (2 sets):** Homozygous reference, homozygous mutant (indel in chr17); 2 bio replicates each
+#### 3. Nir_2018_PMID30586358
+**Nir G et al. (2018) — PMID:30586358**
+*Walking along chromosomes with super-resolution imaging, contact maps, and integrative modeling* (PLoS Genetics)
 
-### 7. Fujimori_2023_doi_10.1101_2023.10.03.560616
-**Fujimori T et al. (2023) — doi:10.1101/2023.10.03.560616 (preprint)**
-- **Cell type:** K562 (human erythroleukemia); 293T (HEK293T with TetR-KRAB/DNMT3B/HDAC4 doxycycline-inducible silencing systems)
-- **Chromatin target:** MYC locus on chr8 (48 × 10-kb segments, ~480 kb); AAVS1 locus on chr19 (custom genome assembly with pJT039-chr19 insert, 19 readout steps at 5-kb resolution)
-- **Experiment type:** Multiplexed FISH of MYC locus in K562 (widefield vs custom microscope); Multiplexed FISH of AAVS1 chromatin with inducible TetR-KRAB/DNMT3B/HDAC4 silencing (wildtype, EEW25AAA mutant, Y46A mutant) and doxycycline treatments
-- **Conditions (18 sets):** K562 MYC widefield/customscope; 293T rTetR-KRAB (wt/Y46A/EEW25AAA) ± dox 1d/5d, washout; rTetR-DNMT3B ± dox 5d+22d washout; rTetR-HDAC4 ± dox 1d/5d
-### 8. Cheng_2023_PMID36778402
-**Cheng Y et al. (2023) — PMID:36778402**
-- **Cell type:** H1-hESC differentiated to neural progenitor cells, RPE-hTERT, A549 (human cancer/immortalized cell lines)
-- **Chromatin target:** 27 TADs on Chr22; 34 TADs on Chr21; Geminin (cell cycle marker)
-- **Experiment type:** Perturb-tracing: high-content screening of 3D genome regulators via multiplexed FISH with CRISPR perturbations (CHD7 knockdown/overexpression, ZNF114, PCBP1, 137-gene screen)
-- **Conditions (15 sets):** H1-hESC NPC shCHD7/control on Chr22; RPE-hTERT siCHD7/control on Chr21 and Chr22; A549 siCHD7/shCHD7/sgZNF114/sgPCBP1/controls on Chr22; CHD7 overexpression; 137-gene knockdown screen
-### 9. Chen_2023_PMID36996812
-**Chen LF et al. (2023) — PMID:36996812**
-- **Cell type:** H9 differentiated to cranial neural crest cells (CNCCs); H9 ESCs
-- **Chromatin target:** 80 spaced regions at SOX9 locus
-- **Experiment type:** Chromatin tracing of SOX9 locus with and without CTCF binding site deletions
-- **Conditions (5 sets):** CNCCs wt, CNCCs with CTCF deletions at E1.35 and SOX9 promoter; ESC undifferentiated; multiple bio replicates
+- **Cell type:** GM23248 (human lymphoblastoid cell line, LCL)
+- **Chromatin target:** 8 Mb walk on chr19 (22 genomic regions)
+- **Resolution:** ~200 kb–1 Mb per walk step (super-resolution OligoSTORM / OligoDNA-PAINT imaging)
+- **Method:** Super-resolution chromosome walks combined with integrative modeling using Hi-C restraints; visualizes A/B compartment structures at sub-megabase scale
+- **Biological question:** What are the structural differences between A-type and B-type chromatin compartments in single cells? Can integrative modeling of imaging + Hi-C data reveal chromosome organization?
+- **Conditions (1 set):** Wild-type GM23248 cells
+- **Note:** No FOF-CT trace files available
 
-### 10. Patterson_2023_PMID37540754
+#### 4. Patterson_2023_PMID37540754
 **Patterson B et al. (2023) — PMID:37540754**
+*Female naïve human pluripotent stem cells carry X chromosomes with Xa-like and Xi-like folding conformations* (Cell Reports)
+
 - **Cell type:** IMR-90 (human fibroblasts); HES-3, H9, H7-hESC (human embryonic stem cells)
-- **Chromatin target:** chrX TADs (20+20 TADs, ~100 kb per TAD); XIST RNA FISH; ATRX protein staining
-- **Experiment type:** Chromatin tracing of chrX folding conformations in naive and primed human pluripotent stem cells during X-chromosome inactivation
+- **Chromatin target:** chrX TADs (20+20 TADs, ~100 kb per TAD); combined with XIST RNA FISH and ATRX protein staining
+- **Resolution:** TAD-level (~100 kb per TAD)
+- **Method:** Chromatin tracing of X chromosome folding at megabase resolution across multiple pluripotency states, combined with simultaneous XIST RNA and ATRX protein detection
+- **Biological question:** What is the 3D folding state of X chromosomes in naïve versus primed human pluripotent stem cells? Do naïve X chromosomes resemble Xa or Xi conformations?
+- **Key findings context:** Naïve X chromosomes exhibit both Xa-like and Xi-like folding conformations but lack the compaction of somatic Xi; XIST accumulation observed on damaged X chromosomes in H7 naïve cells
 - **Conditions (21 sets):** IMR-90 mTeSR1/5iLAF/5iLA; HES-3 mTeSR1/5iLAF/5iLA/4iLAF+tMEKi; H9 mTeSR1/5iLAF/5iLA combined (XIST+/−), ATRX+/−; H7 day2/4/6 (XIST+/−)
----
+
+#### 5. Cheng_2023_PMID36778402
+**Cheng Y et al. (2023) — PMID:36778402**
+*Perturb-tracing enables high-content screening of multiscale 3D genome regulators* (Nature Methods)
+
+- **Cell type:** H1-hESC differentiated to neural progenitor cells (NPCs), RPE-hTERT, A549
+- **Chromatin target:** 27 TADs on Chr22; 34 TADs on Chr21; cell cycle tracked with Geminin staining
+- **Resolution:** TAD-level (~0.5–2 Mb per TAD)
+- **Method:** Perturb-tracing — a high-content imaging screening platform combining pooled CRISPR perturbation, cellular barcode readout (BARC-FISH), and chromatin tracing; screened 137 genes for effects on chromatin folding
+- **Biological question:** Can image-based screening identify novel regulators of multiscale chromatin organization (domains, compartments, chromosome territories)? How do specific perturbations (CHD7, ZNF114, PCBP1) affect 3D genome structure?
+- **Key perturbations:** CHD7 knockdown/overexpression, siZNF114, sgPCBP1, 137-gene CRISPR screen
+- **Conditions (15 sets):** H1-hESC NPC shCHD7/control on Chr22; RPE-hTERT siCHD7/control on Chr21 and Chr22; A549 siCHD7/shCHD7/sgZNF114/sgPCBP1/controls on Chr22; CHD7 overexpression; 137-gene knockdown screen
+
+### Specific Genomic Region / Locus-Focused Studies
+
+These studies focus on defined genomic loci (typically <2 Mb) at high resolution, probing chromatin domain formation, enhancer-promoter regulation, epigenetic mechanisms, or variant effects at specific genes.
+
+#### 6. Bintu_2018_PMID30361340
+**Bintu B et al. (2018) — PMID:30361340**
+*Super-resolution chromatin tracing reveals domains and cooperative interactions in single cells* (Science)
+
+- **Cell type:** IMR-90, HCT116, A549, K562
+- **Chromatin target:** 2–3 Mb regions on chr21 — chr21:28–30 Mb (1.2 Mb core, extended to 2 Mb) and chr21:34–37 Mb (2.5 Mb); panels of 41–83 consecutive 30-kb loci
+- **Resolution:** 30 kb (consecutive loci imaged by sequential hybridization with super-resolution STORM or diffraction-limited microscopy)
+- **Method:** Pioneering super-resolution chromatin tracing method; kilobase-resolution, nanometer-scale positional accuracy; de novo identification of TADs and cooperative multiway chromatin interactions in single cells
+- **Biological question:** Do TAD-like structures exist in single cells? How do cohesin depletion and cell type affect domain boundaries and chromatin hub formation?
+- **Key treatments:** RAD21-AID cohesin depletion (auxin) in HCT116; cell cycle tracking (Geminin) in IMR-90
+- **Conditions (10 sets):** IMR90 chr21:28–30 Mb, IMR90 chr21:18–20 Mb (no TADs), IMR90 chr21:34–37 Mb across cell cycle, A549 chr21:28–30 Mb, K562 chr21:28–30 Mb, HCT116 chr21:28–30 Mb ± cohesin depletion, HCT116 chr21:34–37 Mb ± cohesin depletion + post-division
+
+#### 7. Cheng_2021_PMID34749781
+**Cheng Y et al. (2021) — PMID:34749781**
+*TAD-like single-cell domain structures exist on both active and inactive X chromosomes and persist under epigenetic perturbations* (Genome Biology)
+
+- **Cell type:** IMR-90, RPE-hTERT
+- **Chromatin target:** 28 consecutive 30-kb loci on chrX (~840 kb); simultaneous XIST RNA FISH and mH2A.1 protein staining
+- **Resolution:** 30 kb
+- **Method:** Chromatin tracing combined with epigenetic markers (XIST RNA, mH2A.1) and pharmacological perturbations targeting different epigenetic pathways
+- **Biological question:** Do TAD-like single-cell domains exist on both active and inactive X chromosomes? Do epigenetic perturbations (DNA methylation, H3K27me3, HDAC, transcription) disrupt single-cell domain structures?
+- **Key treatments:** DNA methylation inhibitor (5-aza-2’-deoxycytidine), EZH2 inhibitor (GSK126), transcription inhibitor (alpha-amanitin), HDAC inhibitor (TSA)
+- **Conditions (9 sets):** IMR90 untreated (open/closed chromatin), DNA methylation inhibitor, EZH2 inhibitor, hyper H3K27me3, transcription inhibitor, HDAC inhibitor; RPE-1 untreated
+- **Note:** No FOF-CT trace files available
+
+#### 8. Llimos_2022_PMID35440565
+**Llimos G et al. (2022) — PMID:35440565**
+*A leukemia-protective germline variant mediates chromatin module formation via transcription factor nucleation* (Nature Communications)
+
+- **Cell type:** B-lymphocyte primary cells (LCLs with homozygous reference or mutant indel on chr17)
+- **Chromatin target:** 200-kb region on chr17 encompassing the AXIN2-linked variable chromatin module (VCM); chr17:63486119–63686118
+- **Resolution:** 8 kb
+- **Method:** Multiplexed FISH to measure 3D chromatin compaction at a specific non-coding variant site associated with CLL predisposition; examines how a 5-bp indel (MEF2 binding site creation) controls super-enhancer activity and chromatin module formation
+- **Biological question:** How does a non-coding germline variant alter 3D chromatin organization at a variable chromatin module (VCM)? Does MEF2-dependent super-enhancer activation cause long-range chromatin compaction?
+- **Conditions (2 sets):** Homozygous reference, homozygous mutant (indel in chr17); 2 biological replicates each
+
+#### 9. Fujimori_2023_doi_10.1101_2023.10.03.560616
+**Fujimori T et al. (2023) — doi:10.1101/2023.10.03.560616** (preprint; published PMID:37873344)
+*Single-cell chromatin state transitions during epigenetic memory formation* (Nature)
+
+- **Cell type:** K562 (human erythroleukemia); 293T (HEK293T with TetR-KRAB/DNMT3B/HDAC4 doxycycline-inducible silencing systems)
+- **Chromatin target:** MYC locus on chr8 (48 × 10 kb segments, ~480 kb); AAVS1 locus on chr19 (19 readout steps at 5 kb resolution, ~95 kb)
+- **Resolution:** 10 kb (MYC locus); 5 kb (AAVS1 locus)
+- **Method:** Multiplexed FISH to measure chromatin compaction during inducible epigenetic silencing; tracks how different repressors (TetR-KRAB, DNMT3B, HDAC4) and their mutants cause chromatin structural changes; widefield vs. custom microscope comparison
+- **Biological question:** How does chromatin structure change during gene silencing and epigenetic memory formation? Does compaction predict long-term epigenetic memory? Which repressive modifications (H3K9me3, DNA methylation, HDAC-mediated) cause lasting chromatin compaction?
+- **Key treatments:** Doxycycline induction (1 µg/mL) for 1 day, 5 days, and 22-day washout; wildtype vs mutant repressors (EEW25AAA, Y46A)
+- **Conditions (18 sets):** K562 MYC widefield/customscope; 293T rTetR-KRAB (wt/Y46A/EEW25AAA) ± dox 1d/5d, washout; rTetR-DNMT3B ± dox 5d+22d washout; rTetR-HDAC4 ± dox 1d/5d
+
+#### 10. Chen_2023_PMID36996812
+**Chen LF et al. (2023) — PMID:36996812**
+*Structural elements promote architectural stripe formation and facilitate ultra-long-range gene regulation at a human disease locus* (Molecular Cell)
+
+- **Cell type:** H9 differentiated to cranial neural crest cells (CNCCs); H9 ESCs (undifferentiated)
+- **Chromatin target:** SOX9 locus — 80 spaced regions spanning the SOX9 TAD (~1.5 Mb); includes Pierre Robin sequence (PRS) enhancer clusters at >1.25 Mb distance from SOX9 promoter
+- **Resolution:** ~15–20 kb (spaced probes across the TAD)
+- **Method:** Optical reconstruction of chromatin architecture (ORCA) imaging to trace 3D locus topology; combines chromatin tracing with CTCF binding site deletions to study stripe formation and ultra-long-range enhancer-promoter contacts
+- **Biological question:** How do CTCF-bound structural elements within the SOX9 TAD mediate architectural stripe formation and ultra-long-range enhancer-promoter contacts relevant to Pierre Robin sequence?
+- **Key perturbations:** CTCF binding site deletions at E1.35 and SOX9 promoter
+- **Conditions (5 sets):** CNCCs wt, CNCCs with CTCF deletions at E1.35 and SOX9 promoter; ESC undifferentiated; multiple biological replicates
 
 ## Files
 
@@ -122,11 +181,10 @@ Metadata and download manifests for **human** multiplexed FISH datasets from the
 | `trace_core_file_accession` | 4DN file accession for trace core CSV |
 | `trace_core_url` | Direct S3 download URL for FOF-CT trace core CSV |
 | `all_fofct_types` | All FOF-CT file types available (pipe-separated) |
-
-| readout_resolution | Step/readout resolution (e.g. 30 kb, TAD-level) |
-| region_size | Genomic region size/range (e.g. chr21:28-30 Mb) |
-| cell_type_detail | Detailed cell type/biosource from 4DN portal |
-| treatment_detail | Specific treatment details from 4DN portal |
+| `readout_resolution` | Step/readout resolution (e.g. 30 kb, TAD-level) |
+| `region_size` | Genomic region size/range (e.g. chr21:28-30 Mb) |
+| `cell_type_detail` | Detailed cell type/biosource from 4DN portal |
+| `treatment_detail` | Specific treatment details from 4DN portal |
 
 ## Download Trace Files
 
